@@ -1,0 +1,354 @@
+*, :after, :before { box-sizing: border-box; }
+
+body {
+	font-family: sans-serif;
+    background-color: #FAFAFA;
+}
+
+.man {
+    display: block;
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;  
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+    text-align: center;
+    /*margin: 40px auto 10px auto;*/
+    color: #000000;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    margin: 60px auto 15px auto;
+    color: #000000
+}
+
+.line {
+    border-top: 2px solid #407BFF;
+    width: 60px;
+    height: 4px;
+    margin: 0 auto;
+}
+
+.uvod,
+.kancelar,
+.dele{
+   text-align: justify;
+   font-family: 'Montserrat', sans-serif;
+   font-weight: lighter;
+   font-size: 16px;
+   color: #8b8b8b;
+}
+
+.uvod {
+   margin: 30px 20px;
+}
+
+.kancelar {
+ margin: 15px 20px 28px 20px;
+}
+
+.dele{
+   margin: 17px 20px 30px 20px;
+}
+
+.dobrodruzstvi {
+    background-color: #407BFF;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    padding: 11px 30px;
+    border-radius: 25px;
+    border: 0;
+    margin: 0 auto;
+}
+
+
+.plaz {
+    background-color: #8b8b8b;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    padding: 11px 30px;
+    border-radius: 25px;
+    border: 0;
+    margin: 10px auto 0 auto; 
+}
+
+.mapa,
+.kaktus,
+.letadlo,
+.palma,
+.slunecnik,
+.auto {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px #407BFF1F;
+    margin: 0 20px 15px 20px;
+    display: flex;
+}
+
+.imgmapa,
+.imgletadlo {
+    width: 45px;
+    margin: 20px 29px 20px 20px;
+}
+
+.imgkaktus {
+    width: 40px;
+    margin: 19px 32px 21px 22px;
+}
+
+.imgpalma {
+    width: 50px;
+    margin: 21px 24px 19px 20px;
+}
+
+.imgslunecnik {
+    width: 50px;
+    margin: 19px 26px 21px 18px;
+}
+
+.imgauto {
+    width: 50px;
+    margin: 20px 24px 20px 20px;
+}
+
+.kaktustext,
+.mapatext,
+.letadlotext,
+.palmatext,
+.slunecniktext,
+.autotext {
+    text-align: left;
+    margin: 32px 20px 20px 0px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    font-size: 13px;
+    color: #8b8b8b;
+}
+
+.projektik {
+    margin-top: 60px;
+}
+
+
+
+
+@media screen and (min-width: 640px) {
+    .man { width: 400px; 
+    }
+
+    .uvod { margin: 30px 109px;
+    }
+
+    .kancelar,
+    .dele { margin: 17px 109px 40px 109px ;
+      }
+
+    .plaz{ 
+        margin: 0 auto 0 20px;
+      }  
+
+    .mapa,
+    .kaktus,
+    .letadlo,
+    .palma,
+    .slunecnik,
+    .auto {
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px #407BFF1F;
+        margin: 0 20px 15px 20px;
+        display: flex;
+    }
+
+    .imgmapa,
+    .imgletadlo,
+    .imgkaktus,
+    .imgpalma,
+    .imgslunecnik,
+    .imgauto  {
+        margin: 40px auto 20px auto;
+    }
+
+
+   /* .kaktustext,
+    .mapatext,
+    .letadlotext {
+        margin: 32px 20px 20px 0px;
+        text-align: left;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: lighter;
+        font-size: 13px;
+        color: #8b8b8b;
+    }*/
+
+    .kaktustext,
+    .mapatext,
+    .letadlotext,
+    .palmatext,
+    .slunecniktext,
+    .autotext {
+        margin: 0 15px 20px 15px;
+        text-align: center;
+    }
+
+    .tlacitka{ 
+        display: flex;
+        justify-content: center;
+      }   
+
+    .kancelarkostky,
+    .box{
+        display: flex;
+        justify-content: space-between;
+        flex: 0 0 calc((100%-80px)/3);
+    }
+
+    .mapa,
+    .kaktus,
+    .letadlo,
+    .palma,
+    .slunecnik,
+    .auto {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 40px;
+    }
+
+    .projektik {
+        margin-top: 60px;
+    }
+
+}
+
+@media screen and (min-width: 1100px) {
+    .kontejner {
+        display: flex;
+        /*flex: 0 0 490px;
+        justify-content: flex-end;*/
+        margin-bottom: 80px;
+        justify-content: space-between;
+    }
+
+    .segundo {
+        order: -1;
+        /*margin-right: 30px;*/
+        width: 490px;
+    }
+
+    .primero {
+        justify-content: center;
+        /*margin-left: 30px;*/
+        width: 490px;
+    }
+
+    .man {
+        max-width: 425px;
+        display: block;
+        justify-content: center; 
+    }
+
+    h1 {
+        text-align: left;
+        margin: 73px 0 10px 0;
+    }
+
+    .line {
+        margin-left: 82px;
+    }
+
+    .uvod {
+        margin: 30px 94px 30px 82px;
+        width: 490px;
+        margin: 30px 0;
+     }
+
+    .servis {
+        display: flex;
+        margin-bottom: 80px;
+        justify-content: center;
+    }
+
+    .sluzby {
+        display: flex;
+        /*justify-content: center;*/
+        /*flex-grow: 1;*/
+   
+    }
+
+    .serviskostky {
+        order: -1;
+        width: 550px;
+        justify-content: space-between;
+        /*flex: 0 0 calc((100% - 44px)/3)*/
+    }
+
+
+
+    .kancelar{
+        width: 430px;
+        margin: 0;
+    }
+
+    .dele{
+        width: 430px;
+        margin: 0px 60px 0 0;
+    }
+
+    .servistext {
+        width: 430px;
+        margin: 40px 0 17px 60px;
+    }
+
+    .sluzbytext {
+        width: 430px;
+        margin-top: 40px;
+        margin-right: 60px;
+    }
+    
+    .mapa,
+    .kaktus,
+    .letadlo,
+    .palma,
+    .slunecnik,
+    .auto {
+        width: 167px;
+        margin: 0;
+    }
+
+    .kaktustext,
+    .mapatext,
+    .letadlotext,
+    .palmatext,
+    .slunecniktext,
+    .autotext {
+        margin: 0 15px 40px 15px;
+    }
+
+    h2 {
+        text-align: left;
+        margin: 0 0 17px 0;
+    }
+    
+    .projektik {
+        position: relative;
+        width: 1040px;
+        margin: 60px auto;
+    }
+
+    .box {
+        width: 550px;
+        justify-content: space-between;
+        /*flex: 0 0 calc((100% - 44px)/3)*/
+    }
+
+
+
+}
